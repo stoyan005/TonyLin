@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "DM Serif Text", sans-serif;
+	background: #0a0a0a;
+	color: #ffffff;
+}
+
+.header-text {
+	margin-top: 20%;
+	font-size: 30px;
+}
+
+.header-text h1 {
+	font-size: 60px;
+}
