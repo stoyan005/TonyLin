@@ -12,11 +12,20 @@ body {
 	color: #ffffff;
 }
 
-.header-text {
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	padding: 1rem;
+	height: 6rem;
+}
+
+.htext {
 	margin-top: 20%;
 	font-size: 30px;
 }
 
-.header-text h1 {
+.htext h1 {
 	font-size: 60px;
 }
