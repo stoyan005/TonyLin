@@ -59,7 +59,7 @@ body {
 }
 
 .navbar-links li a:hover {
-	color: rgb(202, 86, 86);
+	color: #ca5656;
 }
 
 .navbar-links li a::after {
@@ -69,8 +69,12 @@ body {
 	width: 0;
 	height: 2px;
 	bottom: -3px;
-	background-color: rgb(202, 86, 86);
+	background-color: #ca5656;
 	transition: width 0.3s ease;
+}
+
+.navbar-logo span {
+	color: #ca5656;
 }
 
 .navbar-links li a:hover::after {
@@ -81,6 +85,8 @@ body {
 	.navbar-links {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		gap: 1.5rem;
 	}
 
