@@ -55,12 +55,11 @@ body {
 	font-size: 1.25rem;
 	color: #ffffff;
 	text-decoration: none;
-	transition: transform 0.3s ease, color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .navbar-links li a:hover {
 	color: rgb(202, 86, 86);
-	transform: scale(1.1);
 }
 
 .navbar-links li a::after {
@@ -76,6 +75,18 @@ body {
 
 .navbar-links li a:hover::after {
 	width: 100%;
+}
+
+@media (max-width: 800px) {
+	.navbar-links {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.navbar-links li a {
+		font-size: 1rem;
+	}
 }
 
 /* ! THIS IS FOR THE HEADER TEXT */
