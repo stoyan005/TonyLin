@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ! THIS IS FOR THE * */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* ! THIS IS FOR THE HTML */
 html {
 	scroll-behavior: smooth;
 }
 
+/* ! THIS IS FOR THE BODY */
 body {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
 	font-family: 'DM Serif Text', sans-serif;
-	background: linear-gradient(270deg, #f3904f, #3b4371, #f3904f);
+	background: linear-gradient(300deg, #f3904f, #3b4371, #f3904f);
 	background-size: 600% 600%;
 	background-attachment: fixed;
-	animation: gradientAnimation 15s ease infinite;
+	animation: mainTextAnimation 15s ease infinite;
 }
 
-/* Keyframes for gradient animation */
-@keyframes gradientAnimation {
+@keyframes mainTextAnimation {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -59,7 +61,7 @@ body {
 	font-weight: bold;
 }
 
-.navbar-logo span {
+span {
 	color: #ca5656;
 }
 
