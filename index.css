@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
 	margin: 0;
@@ -12,14 +12,32 @@ html {
 }
 
 body {
-	font-family: "DM Serif Text", sans-serif;
-	background: #0a0a0a;
+	margin: 0;
+	padding: 0;
 	color: #ffffff;
+	font-family: 'DM Serif Text', sans-serif;
+	background: linear-gradient(270deg, #f3904f, #3b4371, #f3904f);
+	background-size: 600% 600%;
+	background-attachment: fixed;
+	animation: gradientAnimation 15s ease infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* ! THIS IS FOR THE NAVBAR */
 .navbar {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #1f1f1f;
 	color: #ffffff;
 	padding: 1.25rem 2rem;
@@ -39,6 +57,10 @@ body {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+.navbar-logo span {
+	color: #ca5656;
 }
 
 .navbar-links {
@@ -63,7 +85,7 @@ body {
 }
 
 .navbar-links li a::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	width: 0;
@@ -71,10 +93,6 @@ body {
 	bottom: -3px;
 	background-color: #ca5656;
 	transition: width 0.3s ease;
-}
-
-.navbar-logo span {
-	color: #ca5656;
 }
 
 .navbar-links li a:hover::after {
@@ -96,11 +114,30 @@ body {
 }
 
 /* ! THIS IS FOR THE HEADER TEXT */
-.htext {
-	margin-top: 20%;
-	font-size: 30px;
+.main-text {
+	position: relative;
+	text-align: center;
+	top: -80px;
 }
 
-.htext h1 {
-	font-size: 60px;
+.main-text p {
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+
+.main-text h1 {
+	font-size: 5rem;
+}
+
+.text-section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.black-section {
+	min-height: 100vh;
+	background-color: #000000;
+	color: white;
 }
