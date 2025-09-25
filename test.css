@@ -1,0 +1,84 @@
+.info-box-dark {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	padding: 18px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+}
+
+.info-icon {
+	font-size: 24px;
+	margin-top: 4px;
+	flex-shrink: 0;
+}
+
+.info-content {
+	flex: 1;
+}
+
+.info-title {
+	font-size: 16px;
+	margin: 0 0 6px;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.info-text {
+	font-size: 14px;
+	margin: 0 0 10px;
+	color: #bbbbbb;
+}
+
+.info-link {
+	font-size: 14px;
+	color: #4da6ff;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.info-link:hover {
+	color: #81cfff;
+}
+
+/* GRID LAYOUT */
+.info-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+
+/* RESPONSIVE: 2 COLUMNS ON WIDER SCREENS */
+@media (min-width: 600px) {
+	.info-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.icons-socials {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	padding: 1rem;
+}
+
+.icons svg {
+	background-color: black;
+	color: white;
+	padding: 5px 5px;
+	border-radius: 10px;
+}
+
+.icons svg:hover {
+	background-color: white;
+	color: black;
+	transform: scale(1.2);
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
